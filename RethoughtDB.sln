@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethoughtDB.Core", "RethoughtDB.Core\RethoughtDB.Core.csproj", "{38454291-43AE-4129-BFA2-E9700E1C6F07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethoughtDB.Core.Tests", "RethoughtDB.Core.Tests\RethoughtDB.Core.Tests.csproj", "{5E8400E9-7484-40F6-8005-3B580322AC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethoughtDB.Adapters.Discord", "RethoughtDB.Adapters.Discord\RethoughtDB.Adapters.Discord.csproj", "{0CBC9F2A-A434-4E11-878C-BBF27FAE1873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RethoughtDB.Adapters.Discord.Tests", "RethoughtDB.Adapters.Discord.Tests\RethoughtDB.Adapters.Discord.Tests.csproj", "{DD67D161-A966-40FC-BFAF-B021784D22A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{38454291-43AE-4129-BFA2-E9700E1C6F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38454291-43AE-4129-BFA2-E9700E1C6F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38454291-43AE-4129-BFA2-E9700E1C6F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8400E9-7484-40F6-8005-3B580322AC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8400E9-7484-40F6-8005-3B580322AC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8400E9-7484-40F6-8005-3B580322AC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8400E9-7484-40F6-8005-3B580322AC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBC9F2A-A434-4E11-878C-BBF27FAE1873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBC9F2A-A434-4E11-878C-BBF27FAE1873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBC9F2A-A434-4E11-878C-BBF27FAE1873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBC9F2A-A434-4E11-878C-BBF27FAE1873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD67D161-A966-40FC-BFAF-B021784D22A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD67D161-A966-40FC-BFAF-B021784D22A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD67D161-A966-40FC-BFAF-B021784D22A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD67D161-A966-40FC-BFAF-B021784D22A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
