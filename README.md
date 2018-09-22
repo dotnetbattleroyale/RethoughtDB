@@ -8,5 +8,9 @@ The project has the following projects:
 `RethoughtDB.Adapters.Discord`: A Discord backend for RethoughtDB  
 `RethoughtDB.Adapters.Discord.Tests`: Tests for `RethoughtDB.Adapters.Discord`  
 
+## Etymology
+RethoughtDB is a play on words (using a past-tense conjugation) of [RethinkDB](https://www.rethinkdb.com/).  
+Rethought's other name, MangoDB, is a homage to our lord and saviour, the great [Maͥnͣgͫo#4298](https://github.com/Adomix).
+
 ## Copyright
 RethoughtDB is Copyright (c) .NET Battle Royale (dotnetbattleroyale), as a function of its contributors. Licensed under the MIT License.
