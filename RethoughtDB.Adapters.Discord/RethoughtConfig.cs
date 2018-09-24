@@ -8,13 +8,10 @@ namespace RethoughtDB.Adapters.Discord
 
         public ulong GuildId { get; }
 
-        public string ConnectionString { get; }
-
-        public RethoughtConfig(DiscordSocketClient client, ulong guildId, string connectionString)
+        public RethoughtConfig(DiscordSocketClient client, ulong guildId)
         {
             Client = client;
             GuildId = guildId;
-            ConnectionString = connectionString;
         }
     }
 }

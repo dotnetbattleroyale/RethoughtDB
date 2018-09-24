@@ -11,7 +11,6 @@ namespace RethoughtDB.Adapters.Discord
     public class DiscordRethoughtDatabase: IRethoughtDatabase
     {
         public ulong GuildId { get; }
-        public string ConnectionString { get; }
         public DiscordSocketClient Client { get; }
         public SocketGuild Guild { get; private set; }
         public IReadOnlyList<SocketTextChannel> Tables { get; private set; }
@@ -20,7 +19,6 @@ namespace RethoughtDB.Adapters.Discord
         public DiscordRethoughtDatabase(RethoughtConfig config)
         {
             GuildId = config.GuildId;
-            ConnectionString = config.ConnectionString;
             Client = config.Client;
 
             Client.Ready += () =>
