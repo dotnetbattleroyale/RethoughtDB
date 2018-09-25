@@ -2,13 +2,13 @@
 
 namespace RethoughtDB.Adapters.Discord
 {
-    public class RethoughtConfig
+    public class DiscordConfig
     {
         public DiscordSocketClient Client { get; }
 
         public ulong GuildId { get; }
 
-        public RethoughtConfig(DiscordSocketClient client, ulong guildId)
+        public DiscordConfig(DiscordSocketClient client, ulong guildId)
         {
             Client = client;
             GuildId = guildId;

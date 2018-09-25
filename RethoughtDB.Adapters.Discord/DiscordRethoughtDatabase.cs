@@ -16,7 +16,7 @@ namespace RethoughtDB.Adapters.Discord
         public IReadOnlyList<SocketTextChannel> Tables { get; private set; }
         public bool IsReady { get; private set; }
         
-        public DiscordRethoughtDatabase(RethoughtConfig config)
+        public DiscordRethoughtDatabase(DiscordConfig config)
         {
             GuildId = config.GuildId;
             Client = config.Client;
