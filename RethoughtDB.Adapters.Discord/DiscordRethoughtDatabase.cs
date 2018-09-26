@@ -11,32 +11,25 @@ namespace RethoughtDB.Adapters.Discord
     public class DiscordRethoughtDatabase: IRethoughtDatabase
     {
         public ulong GuildId { get; }
-        public string ConnectionString { get; }
         public DiscordSocketClient Client { get; }
         public SocketGuild Guild { get; private set; }
         public IReadOnlyList<SocketTextChannel> Tables { get; private set; }
         public bool IsReady { get; private set; }
         
-        public DiscordRethoughtDatabase(ulong guildId, string connectionString)
+        public DiscordRethoughtDatabase(DiscordConfig config)
         {
-            GuildId = guildId;
-            ConnectionString = connectionString;
-            Client = new DiscordSocketClient(new DiscordSocketConfig
-            {
-                MessageCacheSize = 100
-            });
+            GuildId = config.GuildId;
+            Client = config.Client;
 
-            Client.Ready += async () =>
+            Client.Ready += () =>
             {
-                Guild = Client.GetGuild(guildId);
+                Guild = Client.GetGuild(GuildId);
                 Tables = Guild.TextChannels.ToList();
                 
                 IsReady = true;
                 DatabaseReady?.Invoke();
+                return Task.CompletedTask;
             };
-            
-            Client.LoginAsync(TokenType.Bot, connectionString).GetAwaiter().GetResult();
-            Client.StartAsync().GetAwaiter().GetResult();
         }
 
         public event Action DatabaseReady;
